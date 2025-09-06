@@ -62,6 +62,34 @@
         </div>
       </div>
 
+      <!-- Desktop Navigation Menu -->
+      <nav class="header-nav">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Acasă</a></li>
+          <li><a href="#services" class="nav-link">Servicii</a></li>
+          <li><a href="#tarife" class="nav-link">Tarife</a></li>
+          <li><a href="#gallery" class="nav-link">Galerie</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Contact Info -->
+      <div class="header-contact">
+        <div class="phone-numbers">
+          <a href="tel:+37367490077" class="phone-link">
+            <span class="phone-icon">📞</span>
+            <span class="phone-text">+373 674 90 077</span>
+          </a>
+          <a href="tel:+37369052387" class="phone-link">
+            <span class="phone-icon">📞</span>
+            <span class="phone-text">+373 690 52 387</span>
+          </a>
+        </div>
+        <div class="emergency-badge">
+          <span class="badge-text">24/7 Urgențe</span>
+        </div>
+      </div>
+
       <!-- Mobile Menu Button -->
       <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
         <span></span>
@@ -548,9 +576,15 @@
 
     // Smooth scrolling for navigation links
     document.addEventListener('DOMContentLoaded', function () {
-      const navLinks = document.querySelectorAll('.menu-nav-link');
+      // Desktop navigation links
+      const desktopNavLinks = document.querySelectorAll('.nav-link');
+      // Mobile navigation links
+      const mobileNavLinks = document.querySelectorAll('.menu-nav-link');
+      // All navigation links
+      const allNavLinks = document.querySelectorAll('.nav-link, .menu-nav-link');
 
-      navLinks.forEach(link => {
+      // Desktop navigation click handlers
+      desktopNavLinks.forEach(link => {
         link.addEventListener('click', function (e) {
           e.preventDefault();
 
@@ -558,14 +592,34 @@
           const targetElement = document.getElementById(targetId);
 
           if (targetElement) {
-            // Smooth scroll to target
             targetElement.scrollIntoView({
               behavior: 'smooth',
               block: 'start'
             });
 
             // Update active link
-            navLinks.forEach(navLink => navLink.classList.remove('active'));
+            desktopNavLinks.forEach(navLink => navLink.classList.remove('active'));
+            this.classList.add('active');
+          }
+        });
+      });
+
+      // Mobile navigation click handlers
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+
+            // Update active link
+            mobileNavLinks.forEach(navLink => navLink.classList.remove('active'));
             this.classList.add('active');
           }
         });
@@ -574,7 +628,6 @@
       // Highlight current section in navigation
       window.addEventListener('scroll', function () {
         const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.menu-nav-link');
         let currentSection = '';
 
         sections.forEach(section => {
@@ -584,7 +637,8 @@
           }
         });
 
-        navLinks.forEach(link => {
+        // Update both desktop and mobile nav links
+        allNavLinks.forEach(link => {
           link.classList.remove('active');
           if (link.getAttribute('href') === '#' + currentSection) {
             link.classList.add('active');
