@@ -1,4 +1,271 @@
- .u-section-1 {
+/* Custom Header Styles */
+.u-header .u-sheet-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-logo .u-logo {
+  width: 60px;
+  height: auto;
+}
+
+.header-logo .u-logo-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.company-name h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.company-name p {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* Navigation Styles */
+.header-nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #478ac9;
+  background-color: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+}
+
+.nav-link:active,
+.nav-link.active {
+  color: #478ac9;
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.mobile-menu-btn span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Contact Info */
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.phone-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.phone-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+}
+
+.phone-link:hover {
+  background-color: rgba(71, 138, 201, 0.3);
+  transform: scale(1.05);
+}
+
+.phone-icon {
+  font-size: 16px;
+}
+
+.emergency-badge {
+  background: linear-gradient(135deg, #ff4757, #ff3742);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.badge-text {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .header-contact .phone-numbers {
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .phone-link {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+  
+  .emergency-badge {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .u-header .u-sheet-1 {
+    flex-wrap: wrap;
+  }
+  
+  .header-nav .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(128, 128, 128, 0.95);
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    gap: 15px;
+    z-index: 1000;
+  }
+  
+  .header-nav .nav-menu.active {
+    display: flex;
+  }
+  
+  .mobile-menu-btn {
+    display: flex;
+  }
+  
+  .header-contact {
+    order: -1;
+    margin-left: auto;
+    gap: 15px;
+  }
+  
+  .company-name h1 {
+    font-size: 24px;
+  }
+  
+  .company-name p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .u-header .u-sheet-1 {
+    padding: 10px 15px;
+  }
+  
+  .header-logo {
+    gap: 10px;
+  }
+  
+  .header-logo .u-logo {
+    width: 50px;
+  }
+  
+  .company-name h1 {
+    font-size: 20px;
+  }
+  
+  .header-contact {
+    gap: 10px;
+  }
+  
+  .phone-numbers {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .emergency-badge {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}
+
+/* Original Section Styles */
+.u-section-1 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('images/man-try-fix-car-engine-problem-local-road-chiang-mai-thailand-1.jpg');
   background-position: 50% 50%;
 }
