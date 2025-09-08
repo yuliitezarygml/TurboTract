@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://turbotract.com/sitemap.xml
