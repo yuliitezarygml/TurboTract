@@ -1,0 +1,222 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "motocicleta",
+      "title": "Motocicletă",
+      "description": "Tractări profesionale motociclete în Moldova",
+      "fullDescription": "Servicii de tractare motociclete pe platformă profesională. Transport sigur și rapid în toată Moldova.",
+      "price": "400",
+      "oldPrice": "",
+      "quantity": 1,
+      "currency": "MDL",
+      "sku": "",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": ["1"],
+      "variations": [],
+      "variationValues": {},
+      "images": [{"url": "https://turbotract.md/images/pngwing.com1.png"}],
+      "created": 1755897418180,
+      "updated": 1755897583483,
+      "isDefault": false,
+      "translations": {
+        "ro": {
+          "name": "motocicleta",
+          "title": "Motocicletă",
+          "description": "Tractări profesionale motociclete în Moldova",
+          "fullDescription": "Servicii de tractare motociclete pe platformă profesională. Transport sigur și rapid în toată Moldova."
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "hatchback",
+      "title": "Hatchback",
+      "description": "Tractări mașini hatchback de la 400 lei",
+      "fullDescription": "Servicii de tractare mașini hatchback pe platformă. Evacuare rapidă, prețuri accesibile.",
+      "price": "400",
+      "oldPrice": "",
+      "quantity": 1,
+      "currency": "MDL",
+      "sku": "",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": ["1"],
+      "variations": [],
+      "variationValues": {},
+      "images": [{"url": "https://turbotract.md/images/pngwing.com2.png"}],
+      "created": 1755556291644,
+      "updated": 1755896787916,
+      "isDefault": true,
+      "translations": {
+        "ro": {
+          "name": "hatchback",
+          "title": "Hatchback",
+          "description": "Tractări mașini hatchback de la 400 lei",
+          "fullDescription": "Servicii de tractare mașini hatchback pe platformă. Evacuare rapidă, prețuri accesibile."
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "sedan",
+      "title": "Sedan",
+      "description": "Tractări mașini sedan de la 400 lei",
+      "fullDescription": "Servicii de tractare mașini sedan pe platformă profesională. Transport sigur în Moldova și în străinătate.",
+      "price": "400",
+      "oldPrice": "",
+      "quantity": 1,
+      "currency": "MDL",
+      "sku": "",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": ["1"],
+      "variations": [],
+      "variationValues": {},
+      "images": [{"url": "https://turbotract.md/images/pngwing.com3.png"}],
+      "created": 1755556291644,
+      "updated": 1755896796432,
+      "isDefault": true,
+      "translations": {
+        "ro": {
+          "name": "sedan",
+          "title": "Sedan",
+          "description": "Tractări mașini sedan de la 400 lei",
+          "fullDescription": "Servicii de tractare mașini sedan pe platformă profesională. Transport sigur în Moldova și în străinătate."
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "crossover",
+      "title": "Crossover",
+      "description": "Tractări crossover de la 400 lei",
+      "fullDescription": "Servicii de tractare crossover pe platformă profesională. Platformă adaptată pentru vehicule înalte.",
+      "price": "400",
+      "oldPrice": "",
+      "quantity": 1,
+      "currency": "MDL",
+      "sku": "",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": ["1"],
+      "variations": [],
+      "variationValues": {},
+      "images": [{"url": "https://turbotract.md/images/pngwing.com4.png"}],
+      "created": 1755556291644,
+      "updated": 1755896804090,
+      "isDefault": true,
+      "translations": {
+        "ro": {
+          "name": "crossover",
+          "title": "Crossover",
+          "description": "Tractări crossover de la 400 lei",
+          "fullDescription": "Servicii de tractare crossover pe platformă profesională. Platformă adaptată pentru vehicule înalte."
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "suv",
+      "title": "SUV",
+      "description": "Tractări SUV de la 450 lei",
+      "fullDescription": "Servicii de tractare SUV pe platformă profesională. Capacitate de transport pentru vehicule grele.",
+      "price": "450",
+      "oldPrice": "",
+      "quantity": 1,
+      "currency": "MDL",
+      "sku": "",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": ["1"],
+      "variations": [],
+      "variationValues": {},
+      "images": [{"url": "https://turbotract.md/images/pngwing.com5.png"}],
+      "created": 1755556291645,
+      "updated": 1755897181669,
+      "isDefault": true,
+      "translations": {
+        "ro": {
+          "name": "suv",
+          "title": "SUV",
+          "description": "Tractări SUV de la 450 lei",
+          "fullDescription": "Servicii de tractare SUV pe platformă profesională. Capacitate de transport pentru vehicule grele."
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "pickup",
+      "title": "Pickup",
+      "description": "Tractări pickup de la 450 lei",
+      "fullDescription": "Servicii de tractare pickup pe platformă profesională.",
+      "price": "450",
+      "oldPrice": "",
+      "quantity": 1,
+      "currency": "MDL",
+      "sku": "",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": ["1"],
+      "variations": [],
+      "variationValues": {},
+      "images": [{"url": "https://turbotract.md/images/pngwing.com6.png"}],
+      "created": 1755897428178,
+      "updated": 1755897428178,
+      "isDefault": false,
+      "translations": {
+        "ro": {
+          "name": "pickup",
+          "title": "Pickup",
+          "description": "Tractări pickup de la 450 lei",
+          "fullDescription": "Servicii de tractare pickup pe platformă profesională."
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "bus",
+      "title": "Bus",
+      "description": "Tractări autobuze de la 450 lei",
+      "fullDescription": "Servicii de tractare autobuze și microbuze pe platformă profesională.",
+      "price": "450",
+      "oldPrice": "",
+      "quantity": 1,
+      "currency": "MDL",
+      "sku": "",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": ["1"],
+      "variations": [],
+      "variationValues": {},
+      "images": [{"url": "https://turbotract.md/images/pngwing.com7.png"}],
+      "created": 1755897430433,
+      "updated": 1755897481916,
+      "isDefault": false,
+      "translations": {
+        "ro": {
+          "name": "bus",
+          "title": "Bus",
+          "description": "Tractări autobuze de la 450 lei",
+          "fullDescription": "Servicii de tractare autobuze și microbuze pe platformă profesională."
+        }
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "title": "Tractări Auto",
+      "categoryId": null,
+      "created": 1755556291642,
+      "updated": 1755896285336,
+      "translations": {
+        "ro": {
+          "title": "Tractări Auto"
+        }
+      }
+    }
+  ],
+  "variations": []
+}
