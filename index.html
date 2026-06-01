@@ -153,7 +153,7 @@
       <!-- Desktop Contact Info -->
       <div class="header-contact">
         <div class="phone-numbers">
-          <a href="tel:+37369052387" class="phone-link">
+          <a href="tel:+37369052387" class="phone-link" onclick="trackConversion()">
             <svg class="phone-svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.66 1 1 0 01-.25 1.02l-2.22 2.11z"/></svg>
             +373 690 52 387
           </a>
@@ -183,7 +183,7 @@
         <div class="menu-contact">
           <h4>Contactează-ne:</h4>
           <div class="menu-phones">
-            <a href="tel:+37369052387" class="menu-phone-link">
+            <a href="tel:+37369052387" class="menu-phone-link" onclick="trackConversion()">
               <span class="phone-icon">📞</span>
               <span class="phone-text">+373 690 52 387</span>
             </a>
@@ -615,7 +615,7 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <ul class="footer-links">
-            <li><a href="tel:+37369052387">📞 +373 690 52 387</a></li>
+            <li><a href="tel:+37369052387" onclick="trackConversion()">📞 +373 690 52 387</a></li>
             <li><a href="https://wa.me/+37369052387">💬 WhatsApp</a></li>
             <li><a href="https://t.me/+37369052387">✈️ Telegram</a></li>
             <li><a href="viber://chat?number=+37369052387">📱 Viber</a></li>
@@ -742,16 +742,24 @@
 
   <!-- Floating Social Media Icons -->
   <div class="floating-social-icons">
-    <a href="viber://chat?number=+37369052387" target="_blank" class="social-icon viber" aria-label="Contactează-ne pe Viber">
+    <a href="viber://chat?number=+37369052387" target="_blank" class="social-icon viber" aria-label="Contactează-ne pe Viber" onclick="trackConversion()">
       <i class="fab fa-viber"></i>
     </a>
-    <a href="https://t.me/+37369052387" target="_blank" class="social-icon telegram" aria-label="Contactează-ne pe Telegram">
+    <a href="https://t.me/+37369052387" target="_blank" class="social-icon telegram" aria-label="Contactează-ne pe Telegram" onclick="trackConversion()">
       <i class="fab fa-telegram-plane"></i>
     </a>
-    <a href="https://wa.me/+37369052387" target="_blank" class="social-icon whatsapp" aria-label="Contactează-ne pe WhatsApp">
+    <a href="https://wa.me/+37369052387" target="_blank" class="social-icon whatsapp" aria-label="Contactează-ne pe WhatsApp" onclick="trackConversion()">
       <i class="fab fa-whatsapp"></i>
     </a>
   </div>
+  <!-- Google Ads Conversion Tracking -->
+  <script>
+    function trackConversion() {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {'send_to': 'AW-18196972209/eng0CLa-nLYcELGF_-RD'});
+      }
+    }
+  </script>
 </body>
 
 </html>
