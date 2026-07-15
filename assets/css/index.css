@@ -686,7 +686,7 @@
 
 /* Original Section Styles */
 .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('images/man-try-fix-car-engine-problem-local-road-chiang-mai-thailand-1.jpg');
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../../images/man-try-fix-car-engine-problem-local-road-chiang-mai-thailand-1.jpg');
   background-position: 50% 50%;
 }
 
@@ -1919,7 +1919,7 @@
 
 .u-section-7 .u-image-1 {
   min-height: 590px;
-  background-image: url("images/image.png");
+  background-image: url("../../images/image.png");
   background-position: 50% 50%;
 }
 
