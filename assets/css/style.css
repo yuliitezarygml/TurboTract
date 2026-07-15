@@ -729,6 +729,8 @@ button {
   height: 58px;
   object-fit: contain;
   margin-bottom: 26px;
+  filter: brightness(0) invert(1);
+  opacity: 0.92;
 }
 
 .service-card h3,
