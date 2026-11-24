@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /intlTelInput/
 
 Sitemap: https://turbotract.md/sitemap.xml

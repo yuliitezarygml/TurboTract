@@ -169,8 +169,32 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-function trackConversion() {
-  if (typeof gtag === 'function') {
-    gtag('event', 'conversion', { send_to: 'AW-18196972209/eng0CLa-nLYcELGF_-RD' });
-  }
+// Google Ads conversion: every click on phone / messenger counts as a lead.
+// The extra event says which channel was used (call, whatsapp, viber, telegram)
+// and on which page, so you can compare them in Google Ads / GA4.
+var ADS_CONVERSION = 'AW-18196972209/eng0CLa-nLYcELGF_-RD';
+
+function contactChannel(href) {
+  if (!href) return '';
+  if (href.indexOf('tel:') === 0) return 'call';
+  if (href.indexOf('wa.me') !== -1) return 'whatsapp';
+  if (href.indexOf('viber:') === 0) return 'viber';
+  if (href.indexOf('t.me') !== -1) return 'telegram';
+  return '';
 }
+
+function trackConversion(channel) {
+  if (typeof gtag !== 'function') return;
+  gtag('event', 'conversion', { send_to: ADS_CONVERSION });
+  gtag('event', channel === 'call' ? 'click_call' : 'click_messenger', {
+    contact_channel: channel || 'unknown',
+    page_path: location.pathname
+  });
+}
+
+document.addEventListener('click', function (event) {
+  var link = event.target.closest ? event.target.closest('a[href]') : null;
+  if (!link) return;
+  var channel = contactChannel(link.getAttribute('href'));
+  if (channel) trackConversion(channel);
+});

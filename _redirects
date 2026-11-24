@@ -1,0 +1,5 @@
+# Old Nicepage URLs -> new pages (301 = permanent, keeps Google ranking)
+/products/motociclet-.html   /products/motococleta.html   301!
+/products/products.html      /#tarife                     301!
+/products/products.json      /                            301!
+/index.html                  /                            301!

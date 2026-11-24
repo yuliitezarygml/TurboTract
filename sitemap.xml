@@ -1,45 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://turbotract.md</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://turbotract.md/</loc>
+    <lastmod>2026-11-24</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://turbotract.md/products/products.html</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://turbotract.md/orase/evacuator-orhei.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://turbotract.md/orase/evacuator-telenesti.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://turbotract.md/orase/evacuator-rezina.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://turbotract.md/orase/evacuator-soldanesti.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://turbotract.md/orase/evacuator-singerei.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://turbotract.md/orase/evacuator-calarasi.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://turbotract.md/products/motococleta.html</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://turbotract.md/products/hatchback.html</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://turbotract.md/products/sedan.html</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://turbotract.md/products/crossover.html</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://turbotract.md/products/suv.html</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbotract.md/products/pickup.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbotract.md/products/microbuz.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
